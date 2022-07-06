@@ -1,5 +1,6 @@
 
 #include <Keyboard.h>
+#include <Mouse.h>
 
 bool pushed = false;
 
@@ -65,8 +66,7 @@ void loginToComputer() {
 
 void openMSI() {
 
-  delay(100);
-  Mouse.move(1000, 500, 0);
+  moveMouseToCorner();
 
   delay(100);
   Mouse.press();
@@ -77,4 +77,59 @@ void openMSI() {
   delay(200);
 
 
+}
+
+void openMinder() {
+
+  //Open directory  
+  Keyboard.press(KEY_LEFT_GUI);
+  delay(100);
+  Keyboard.press('R');
+  delay(100);
+  Keyboard.releaseAll();
+
+  Keyboard.press(KEY_RETURN);
+  delay(100);
+
+
+  //Tab to the file
+
+  //Press enter
+}
+
+void moveMouseToCorner() {
+  
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  delay(100);
+  Mouse.move(127, 127);
+  
 }

@@ -8,6 +8,7 @@ void setup() {
   // put your setup code here, to run once:
 
   Keyboard.begin();
+  Mouse.begin();
 
 }
 
@@ -20,6 +21,9 @@ void loop() {
     delay(35000);
      Keyboard.press(KEY_RETURN);
     loginToComputer();
+
+    openMSI();
+
     pushed = true;
   }
 
@@ -56,4 +60,21 @@ void loginToComputer() {
      Keyboard.press(KEY_RETURN);
     delay(100);
     Keyboard.releaseAll();
+}
+
+
+void openMSI() {
+
+  delay(100);
+  Mouse.move(1000, 500, 0);
+
+  delay(100);
+  Mouse.press();
+
+  delay(100);
+  Mouse.release();
+
+  delay(200);
+
+
 }

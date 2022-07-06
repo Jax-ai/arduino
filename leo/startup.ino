@@ -15,7 +15,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   if(pushed == false) {
-    delay(1000);
+    delay(6000);
     Keyboard.press('n');
     delay(100);
     Keyboard.releaseAll();

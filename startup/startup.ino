@@ -14,16 +14,23 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
 
   if(pushed == false) {
 
     //Wait 1 minute for computer to boot up
     delay(35000);
-     Keyboard.press(KEY_RETURN);
+
+    //Login     
     loginToComputer();
 
+    //Open the GPU Software and apply tune
     openMSI();
+
+    //Open Miner
+    //openMinder();
+
+
 
     pushed = true;
   }
@@ -32,6 +39,8 @@ void loop() {
 
 
 void loginToComputer() {
+
+    Keyboard.press(KEY_RETURN);
 
     //Press enter
     Keyboard.press(KEY_RETURN);
@@ -66,7 +75,21 @@ void loginToComputer() {
 
 void openMSI() {
 
-  moveMouseToCorner();
+  //Open directory  
+  Keyboard.press(KEY_LEFT_GUI);
+  delay(100);
+  Keyboard.press('R');
+  delay(100);
+  Keyboard.releaseAll();
+
+  delay(100);
+  Keyboard.print("C:\\Program Files (x86)\\MSI Afterburner\\MSIAfterburner.exe");
+
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  delay(100);
+
+ // moveMouseToCorner();
 
   delay(100);
   Mouse.press();
@@ -91,7 +114,7 @@ void openMinder() {
   Keyboard.press(KEY_RETURN);
   delay(100);
 
-
+ Keyboard.releaseAll();
   //Tab to the file
 
   //Press enter

@@ -111,9 +111,10 @@ void openMinder() {
   delay(100);
 
  Keyboard.releaseAll();
-  //Tab to the file
 
-  //Press enter
+ 
+ delay(100);
+  Keyboard.print("C:\\Program Files (x86)\\MSI Afterburner\\MSIAfterburner.exe");
 }
 
 void moveMouseToCorner() {

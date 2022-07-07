@@ -62,7 +62,6 @@ void loginToComputer() {
     Keyboard.releaseAll();
 }
 
-s
 void openMSI() {
 
   //Open directory  

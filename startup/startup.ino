@@ -1,4 +1,3 @@
-
 #include <Keyboard.h>
 #include <Mouse.h>
 
@@ -21,7 +20,7 @@ void loop() {
      Keyboard.releaseAll();
 
     //Wait 1 minute for computer to boot up
-    //delay(35000);
+    delay(35000);
 
     //Login     
     loginToComputer();
@@ -50,20 +49,8 @@ void loginToComputer() {
     
     
     //Enter Password
-    Keyboard.press('1');
-    delay(100);
-    Keyboard.releaseAll();
-    
-    Keyboard.press('2');
-    delay(100);
-    Keyboard.releaseAll();
-    
-    Keyboard.press('3');
-    delay(100);
-    Keyboard.releaseAll();
-    
-    Keyboard.press('4');
-    delay(100);
+    Keyboard.print("1234");
+    delay(300);
     Keyboard.releaseAll();
     
     //Submit Password

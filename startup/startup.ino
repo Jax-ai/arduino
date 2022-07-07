@@ -25,6 +25,8 @@ void loop() {
     //Login     
     loginToComputer();
 
+    delay(15000);
+
     //Open the GPU Software and apply tune
     openMSI();
 
@@ -69,8 +71,9 @@ void openMSI() {
  Keyboard.releaseAll();
  delay(100);
       Keyboard.print("run");
-  delay(100);
+  delay(500);
   Keyboard.releaseAll();
+    delay(500);
  Keyboard.press(KEY_RETURN);
   delay(100);
    Keyboard.releaseAll();

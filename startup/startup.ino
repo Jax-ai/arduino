@@ -18,8 +18,10 @@ void loop() {
 
   if(pushed == false) {
 
+     Keyboard.releaseAll();
+
     //Wait 1 minute for computer to boot up
-    delay(35000);
+    //delay(35000);
 
     //Login     
     loginToComputer();
@@ -28,7 +30,7 @@ void loop() {
     openMSI();
 
     //Open Miner
-   openMinder();
+    openMinder();
 
 
 
@@ -79,18 +81,15 @@ void openMSI() {
   delay(100);
  Keyboard.releaseAll();
  delay(100);
-    Keyboard.press(KEY_RETURN);
-  delay(100);
-  Keyboard.press('R');
+      Keyboard.print("run");
   delay(100);
   Keyboard.releaseAll();
  Keyboard.press(KEY_RETURN);
   delay(100);
+   Keyboard.releaseAll();
+   delay(100);
   Keyboard.print("C:\\Program Files (x86)\\MSI Afterburner\\MSIAfterburner.exe");
 delay(500);
- Keyboard.press(KEY_RETURN);
- Keyboard.releaseAll();
- delay(500);
  Keyboard.press(KEY_RETURN);
  Keyboard.releaseAll();
  delay(500);
@@ -104,13 +103,12 @@ delay(500);
 
  Keyboard.press(KEY_RETURN);
  Keyboard.releaseAll();
- delay(1000);
+ delay(5000);
 
-  Keyboard.press('A');
- Keyboard.releaseAll();
+  Keyboard.press('a');
  delay(100);
 
-
+ Keyboard.releaseAll();
 
 
 }
@@ -121,13 +119,13 @@ void openMinder() {
   delay(100);
  Keyboard.releaseAll();
  delay(100);
-    Keyboard.press(KEY_RETURN);
-  delay(100);
-  Keyboard.press('R');
+      Keyboard.print("run");
   delay(100);
   Keyboard.releaseAll();
  Keyboard.press(KEY_RETURN);
   delay(100);
+   Keyboard.releaseAll();
+   delay(100);
 
 
  delay(100);

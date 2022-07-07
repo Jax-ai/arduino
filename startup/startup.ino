@@ -28,7 +28,7 @@ void loop() {
     openMSI();
 
     //Open Miner
-    //openMinder();
+    openMinder();
 
 
 
@@ -89,15 +89,11 @@ void openMSI() {
   Keyboard.releaseAll();
   delay(100);
 
- // moveMouseToCorner();
-
+  Keyboard.press('A');
+  Keyboard.releaseAll();
   delay(100);
-  Mouse.press();
 
-  delay(100);
-  Mouse.release();
 
-  delay(200);
 
 
 }

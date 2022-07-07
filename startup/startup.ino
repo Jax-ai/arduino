@@ -40,11 +40,10 @@ void loop() {
 
 void loginToComputer() {
 
-    Keyboard.press(KEY_RETURN);
 
     //Press enter
-    Keyboard.press(KEY_RETURN);
-    delay(100);
+    Keyboard.press(KEY_UP_ARROW);
+    delay(500);
     Keyboard.releaseAll();
     
     
